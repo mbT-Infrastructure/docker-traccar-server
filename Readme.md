@@ -1,6 +1,6 @@
 # traccar-server image
 
-This Container image extends the [base image](https://github.com/mbT-Infrastructure/docker-java).
+This Container image extends the [Java image](https://github.com/mbT-Infrastructure/docker-java).
 
 This image contains a traccar-server installation. It allows configuration via environment
 variables.
@@ -25,6 +25,16 @@ variables.
     -   Username to use for connecting to the e-mail host.
 -   `FRONTEND_URL`
     -   The base URL where the application is accessable.
+-   `OIDC_ADMIN_GROUP`
+    -   The group in the OIDC scope `groups` to grant admin access to.
+-   `OIDC_CLIENT_ID`
+    -   Client ID from the identity provider for OIDC.
+-   `OIDC_CLIENT_SECRET`
+    -   Client secret from the identity provider for OIDC.
+-   `OIDC_FORCE`
+    -   Set to `true` to only allow authentication via OIDC.
+-   `OIDC_ISSUER_URL`
+    -   Issuer URL of the identity provider.
 
 ## Development
 

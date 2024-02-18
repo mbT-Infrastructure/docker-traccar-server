@@ -18,6 +18,11 @@ services:
             - DATABASE_URL=postgresql://traccar-server-database/database
             - DATABASE_USERNAME=traccar
             - FRONTEND_URL=http://localhost:8000
+            # - OIDC_ADMIN_GROUP=admin
+            # - OIDC_CLIENT_ID=traccar
+            # - OIDC_CLIENT_SECRET=
+            # - OIDC_FORCE=true
+            # - OIDC_ISSUER_URL=https://keycloak/realms/dev
         ports:
             - 8000:80
 
