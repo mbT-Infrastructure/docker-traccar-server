@@ -17,6 +17,8 @@ services:
             - DATABASE_PASSWORD=secret
             - DATABASE_URL=postgresql://traccar-server-database/database
             - DATABASE_USERNAME=traccar
+            - FILTER_ACCURACY=100
+            - FILTER_SKIP_LIMIT=3600
             - FRONTEND_URL=http://localhost:8000
             # - OIDC_ADMIN_GROUP=admin
             # - OIDC_CLIENT_ID=traccar

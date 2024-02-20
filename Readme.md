@@ -23,6 +23,10 @@ variables.
     -   Password to use for connecting to the e-mail host.
 -   `EMAIL_USERNAME`
     -   Username to use for connecting to the e-mail host.
+-   `FILTER_ACCURACY`
+    -   Value for `filter.accuracy` configuration parameter.
+-   `FILTER_SKIP_LIMIT`
+    -   Value for `filter.skipLimit` configuration parameter.
 -   `FRONTEND_URL`
     -   The base URL where the application is accessable.
 -   `OIDC_ADMIN_GROUP`

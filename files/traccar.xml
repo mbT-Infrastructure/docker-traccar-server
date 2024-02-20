@@ -11,6 +11,9 @@
     <entry key="database.password">###DATABASE_PASSWORD###</entry>
     <entry key="database.url">jdbc:###DATABASE_URL###</entry>
     <entry key="database.user">###DATABASE_USERNAME###</entry>
+    <entry key="filter.accuracy">###FILTER_ACCURACY###</entry>
+    <entry key="filter.enable">true</entry>
+    <entry key="filter.skipLimit">###FILTER_SKIP_LIMIT###</entry>
     <entry key="logger.console">true</entry>
     <entry key="mail.smtp.auth">true</entry>
     <entry key="mail.smtp.from">###EMAIL_FROM###</entry>
