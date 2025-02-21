@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -e -o pipefail
 
 replace-vars.sh /opt/traccar-server/config-templates/traccar.xml \
     > /opt/traccar-server/conf/traccar.xml

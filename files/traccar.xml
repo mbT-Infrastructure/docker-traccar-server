@@ -23,6 +23,7 @@
     <entry key="mail.smtp.ssl.enable">true</entry>
     <entry key="mail.smtp.username">###EMAIL_USERNAME###</entry>
     <entry key="openid.adminGroup">###OIDC_ADMIN_GROUP###</entry>
+    <entry key="openid.allowGroup">###OIDC_ALLOW_GROUP###</entry>
     <entry key="openid.clientId">###OIDC_CLIENT_ID###</entry>
     <entry key="openid.clientSecret">###OIDC_CLIENT_SECRET###</entry>
     <entry key="openid.force">###OIDC_FORCE###</entry>

@@ -1,9 +1,13 @@
 # traccar-server image
 
-This Container image extends the [Java image](https://github.com/mbT-Infrastructure/docker-java).
+This Container image extends the [Java image].
 
 This image contains a traccar-server installation. It allows configuration via environment
 variables.
+
+## Installation
+
+1. Pull from [Docker Hub], download the package from [Releases] or build using `builder/build.sh`
 
 ## Environment variables
 
@@ -31,6 +35,8 @@ variables.
     -   The base URL where the application is accessable.
 -   `OIDC_ADMIN_GROUP`
     -   The group in the OIDC scope `groups` to grant admin access to.
+-   `OIDC_ALLOW_GROUP`
+    - The group in the OIDC scope `groups` to restrict access to.
 -   `OIDC_CLIENT_ID`
     -   Client ID from the identity provider for OIDC.
 -   `OIDC_CLIENT_SECRET`
@@ -42,14 +48,12 @@ variables.
 
 ## Development
 
-To build and run for development run:
+To run for development execute:
 
 ```bash
 docker compose --file docker-compose-dev.yaml up --build
 ```
 
-To build the image locally run:
-
-```bash
-./docker-build.sh
-```
+[Java image]: https://github.com/mbT-Infrastructure/docker-java
+[Docker Hub]: https://hub.docker.com/r/madebytimo/traccar-server
+[Releases]: https://github.com/mbT-Infrastructure/docker-traccar-server/releases
