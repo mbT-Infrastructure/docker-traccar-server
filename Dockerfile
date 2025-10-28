@@ -13,6 +13,7 @@ RUN VERSION="$(download.sh --output - \
     && download.sh --name traccar-server.zip \
     "https://github.com/traccar/traccar/releases/download/$VERSION/traccar-other-${VERSION#v}.zip" \
     && compress.sh --decompress traccar-server.zip \
+    && mkdir override \
     && rm traccar-server.zip conf/traccar.xml README.txt
 
 FROM madebytimo/java
